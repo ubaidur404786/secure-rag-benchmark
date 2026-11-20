@@ -1,0 +1,19 @@
+# Core RAG app (local models through Ollama)
+langgraph>=1.0
+langchain-core>=1.0
+langchain-ollama>=1.0
+python-dotenv>=1.0
+
+# Optional: use OpenAI instead of Ollama (LLM_PROVIDER=openai)
+langchain-openai>=1.0
+
+# Benchmark and charts
+pandas>=2.2
+matplotlib>=3.8
+
+# Web demo (app.py)
+streamlit>=1.40
+
+# Optional: notebooks 01-03 and NeMo Guardrails configs
+# nemoguardrails
+# ipykernel

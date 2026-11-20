@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      .title { font-size: 22px; font-weight: 700; fill: #0f172a; }
+      .lane  { font-size: 15px; font-weight: 700; }
+      .box   { rx: 10; stroke-width: 1.5; }
+      .name  { font-size: 14px; font-weight: 600; fill: #0f172a; text-anchor: middle; }
+      .sub   { font-size: 11.5px; fill: #475569; text-anchor: middle; }
+      .tag   { font-size: 10.5px; font-weight: 700; text-anchor: middle; }
+      .line  { stroke: #475569; stroke-width: 1.6; fill: none; marker-end: url(#arrow); }
+      .note  { font-size: 12px; fill: #7f1d1d; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="560" fill="#ffffff"/>
+  <text x="40" y="44" class="title">Secure RAG: the same app, without and with security</text>
+
+  <!-- ============ Lane 1: without security ============ -->
+  <rect x="24" y="66" width="952" height="170" rx="14" fill="#fef2f2" stroke="#fecaca"/>
+  <text x="44" y="94" class="lane" fill="#b91c1c">WITHOUT SECURITY (rag_core.py)</text>
+
+  <rect x="50" y="118" width="130" height="62" class="box" fill="#fff" stroke="#94a3b8"/>
+  <text x="115" y="145" class="name">User question</text>
+  <text x="115" y="164" class="sub">anyone, any text</text>
+
+  <rect x="250" y="118" width="190" height="62" class="box" fill="#fff" stroke="#94a3b8"/>
+  <text x="345" y="145" class="name">Retrieve top-3</text>
+  <text x="345" y="164" class="sub">from ALL documents</text>
+
+  <rect x="510" y="118" width="190" height="62" class="box" fill="#fff" stroke="#94a3b8"/>
+  <text x="605" y="145" class="name">LLM generates</text>
+  <text x="605" y="164" class="sub">trusts every chunk</text>
+
+  <rect x="770" y="118" width="170" height="62" class="box" fill="#fff" stroke="#94a3b8"/>
+  <text x="855" y="145" class="name">Answer</text>
+  <text x="855" y="164" class="sub">sent as-is</text>
+
+  <path d="M180 149 H246" class="line"/>
+  <path d="M440 149 H506" class="line"/>
+  <path d="M700 149 H766" class="line"/>
+
+  <text x="250" y="212" class="note">✗ salaries, passwords and customer data can be retrieved</text>
+  <text x="604" y="212" class="note">✗ obeys hidden instructions and phishing links</text>
+
+  <!-- ============ Shared knowledge base ============ -->
+  <rect x="330" y="252" width="340" height="66" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-dasharray="5 4"/>
+  <text x="500" y="278" class="name">One shared vector store</text>
+  <text x="500" y="298" class="sub">public FAQs · HR files · customer records · IT notes · poisoned wiki page</text>
+
+  <!-- ============ Lane 2: with security ============ -->
+  <rect x="24" y="334" width="952" height="206" rx="14" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="44" y="362" class="lane" fill="#15803d">WITH SECURITY (secure_rag.py + security.py)</text>
+
+  <rect x="40" y="392" width="110" height="62" class="box" fill="#fff" stroke="#94a3b8"/>
+  <text x="95" y="419" class="name">User + role</text>
+  <text x="95" y="438" class="sub">e.g. customer</text>
+
+  <rect x="186" y="384" width="150" height="78" class="box" fill="#fff" stroke="#16a34a"/>
+  <text x="261" y="402" class="tag" fill="#16a34a">LAYER 1 · LLM01</text>
+  <text x="261" y="423" class="name">Input guard</text>
+  <text x="261" y="442" class="sub">regex, then LLM judge</text>
+
+  <rect x="372" y="384" width="150" height="78" class="box" fill="#fff" stroke="#16a34a"/>
+  <text x="447" y="402" class="tag" fill="#16a34a">LAYER 2 · LLM02 / 08</text>
+  <text x="447" y="423" class="name">Access control</text>
+  <text x="447" y="442" class="sub">retrieve role's docs only</text>
+
+  <rect x="558" y="384" width="150" height="78" class="box" fill="#fff" stroke="#16a34a"/>
+  <text x="633" y="402" class="tag" fill="#16a34a">LAYER 3 · LLM01</text>
+  <text x="633" y="423" class="name">Context guard</text>
+  <text x="633" y="442" class="sub">drop poison, tag as data</text>
+
+  <rect x="744" y="384" width="104" height="78" class="box" fill="#fff" stroke="#94a3b8"/>
+  <text x="796" y="428" class="name">LLM</text>
+
+  <rect x="868" y="384" width="96" height="78" class="box" fill="#fff" stroke="#16a34a"/>
+  <text x="916" y="402" class="tag" fill="#16a34a">LAYER 4</text>
+  <text x="916" y="423" class="name">Output</text>
+  <text x="916" y="442" class="sub">links · PII</text>
+
+  <path d="M150 423 H182" class="line"/>
+  <path d="M336 423 H368" class="line"/>
+  <path d="M522 423 H554" class="line"/>
+  <path d="M708 423 H740" class="line"/>
+  <path d="M848 423 H864" class="line"/>
+
+  <!-- blocked path -->
+  <path d="M261 462 V500 H330" class="line"/>
+  <text x="338" y="504" font-size="12" fill="#15803d">blocked → polite refusal (no retrieval, no LLM call)</text>
+
+  <!-- store links -->
+  <path d="M345 180 Q345 220 420 250" class="line" stroke-dasharray="4 3"/>
+  <path d="M500 318 Q470 350 447 380" class="line" stroke-dasharray="4 3"/>
+  <text x="474" y="352" font-size="11" fill="#15803d">filtered by role</text>
+
+  <text x="44" y="530" font-size="12" fill="#475569">The same LLM and documents in both lanes. Only the four layers differ, so the benchmark isolates their effect.</text>
+</svg>

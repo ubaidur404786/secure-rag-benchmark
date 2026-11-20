@@ -1,0 +1,7 @@
+model,mode,Data leak,Direct injection,Indirect injection,Prompt leak
+gemma2:2b,with security,0.0,0.0,0.0,0.0
+gemma2:2b,without security,80.0,100.0,50.0,75.0
+llama3.2:1b,with security,0.0,16.7,0.0,0.0
+llama3.2:1b,without security,60.0,33.3,75.0,25.0
+qwen2.5:7b,with security,0.0,0.0,0.0,0.0
+qwen2.5:7b,without security,90.0,100.0,100.0,25.0

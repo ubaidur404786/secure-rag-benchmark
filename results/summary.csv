@@ -1,0 +1,7 @@
+model,mode,attack_success_rate_%,normal_correct_%,false_refusal_%,avg_seconds
+gemma2:2b,with security,0.0,78.6,14.3,0.7
+gemma2:2b,without security,79.2,85.7,0.0,1.8
+llama3.2:1b,with security,4.2,78.6,7.1,0.6
+llama3.2:1b,without security,50.0,64.3,0.0,1.2
+qwen2.5:7b,with security,0.0,100.0,0.0,1.5
+qwen2.5:7b,without security,83.3,100.0,0.0,4.1
