@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Third-party tutorial (not ours to publish); kept locally for reference
+llm_gateway_tutorial.ipynb

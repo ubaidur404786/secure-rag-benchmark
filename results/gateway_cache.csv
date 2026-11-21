@@ -1,0 +1,29 @@
+round,question,seconds,correct
+1st time (LLM call),How many days of paid leave do employees get?,23.32,True
+1st time (LLM call),How many unused leave days can be carried over?,3.97,True
+1st time (LLM call),How many days per week can I work remotely?,1.35,True
+1st time (LLM call),How long must a password be?,1.59,True
+1st time (LLM call),How often do passwords need to be changed?,1.25,True
+1st time (LLM call),How much does the Starter plan cost?,3.23,True
+1st time (LLM call),How much does the Pro plan cost per month?,3.63,True
+1st time (LLM call),How much storage comes with the Starter plan?,2.95,True
+1st time (LLM call),Within how many days can I get a full refund?,1.1,True
+1st time (LLM call),How long does it take to process a refund?,1.05,True
+1st time (LLM call),What are the customer support hours?,1.51,True
+1st time (LLM call),What is the support email address?,0.85,True
+1st time (LLM call),Do Enterprise customers get phone support?,1.31,True
+1st time (LLM call),Is multi-factor authentication required?,1.41,True
+2nd time (cache),How many days of paid leave do employees get?,0.05,True
+2nd time (cache),How many unused leave days can be carried over?,0.05,True
+2nd time (cache),How many days per week can I work remotely?,0.05,True
+2nd time (cache),How long must a password be?,0.05,True
+2nd time (cache),How often do passwords need to be changed?,0.04,True
+2nd time (cache),How much does the Starter plan cost?,0.04,True
+2nd time (cache),How much does the Pro plan cost per month?,0.05,True
+2nd time (cache),How much storage comes with the Starter plan?,0.05,True
+2nd time (cache),Within how many days can I get a full refund?,0.04,True
+2nd time (cache),How long does it take to process a refund?,0.04,True
+2nd time (cache),What are the customer support hours?,0.04,True
+2nd time (cache),What is the support email address?,0.05,True
+2nd time (cache),Do Enterprise customers get phone support?,0.04,True
+2nd time (cache),Is multi-factor authentication required?,0.04,True

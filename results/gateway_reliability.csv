@@ -1,0 +1,109 @@
+scenario,setup,question,answer,answered,correct,model_used,seconds,cost_usd
+healthy,single model,How many days of paid leave do employees get?,Acme Cloud employees get 20 days of paid leave per year.,True,True,qwen2.5:7b,6.66,0.0
+healthy,single model,How many unused leave days can be carried over?,Up to 5 days can be carried over to the next year.,True,True,qwen2.5:7b,2.33,0.0
+healthy,single model,How many days per week can I work remotely?,You can work remotely up to 3 days per week.,True,True,qwen2.5:7b,2.02,0.0
+healthy,single model,How long must a password be?,Passwords must be at least 14 characters long.,True,True,qwen2.5:7b,2.02,0.0
+healthy,single model,How often do passwords need to be changed?,Passwords must be changed every 180 days.,True,True,qwen2.5:7b,1.88,0.0
+healthy,single model,How much does the Starter plan cost?,The Starter plan costs $10 per month.,True,True,qwen2.5:7b,1.82,0.0
+healthy,single model,How much does the Pro plan cost per month?,The Pro plan costs $25 per month.,True,True,qwen2.5:7b,1.92,0.0
+healthy,single model,How much storage comes with the Starter plan?,50 GB of storage.,True,True,qwen2.5:7b,1.85,0.0
+healthy,single model,Within how many days can I get a full refund?,Within 30 days of purchase.,True,True,qwen2.5:7b,1.83,0.0
+healthy,single model,How long does it take to process a refund?,Refunds are processed within 5 business days.,True,True,qwen2.5:7b,2.02,0.0
+healthy,single model,What are the customer support hours?,"Support is available Monday to Friday, 9 AM to 6 PM IST. Customers can reach support by email or through live chat during these hours. Enterprise customers get 24/7 phone support.",True,True,qwen2.5:7b,4.22,0.0
+healthy,single model,What is the support email address?,support@acmecloud.example,True,True,qwen2.5:7b,1.5,0.0
+healthy,single model,Do Enterprise customers get phone support?,"Yes, Enterprise customers get 24/7 phone support.",True,True,qwen2.5:7b,2.14,0.0
+healthy,single model,Is multi-factor authentication required?,"Yes, multi-factor authentication is required for every company account.",True,True,qwen2.5:7b,2.21,0.0
+healthy,gateway,How many days of paid leave do employees get?,Acme Cloud employees get 20 days of paid leave per year.,True,True,qwen2.5:7b,2.54,0.0
+healthy,gateway,How many unused leave days can be carried over?,Up to 5 days can be carried over to the next year.,True,True,qwen2.5:7b,2.32,0.0
+healthy,gateway,How many days per week can I work remotely?,You can work remotely up to 3 days per week.,True,True,qwen2.5:7b,1.96,0.0
+healthy,gateway,How long must a password be?,Passwords must be at least 14 characters long.,True,True,qwen2.5:7b,1.8,0.0
+healthy,gateway,How often do passwords need to be changed?,Passwords must be changed every 180 days.,True,True,qwen2.5:7b,1.81,0.0
+healthy,gateway,How much does the Starter plan cost?,The Starter plan costs $10 per month.,True,True,qwen2.5:7b,1.85,0.0
+healthy,gateway,How much does the Pro plan cost per month?,The Pro plan costs $25 per month.,True,True,qwen2.5:7b,1.85,0.0
+healthy,gateway,How much storage comes with the Starter plan?,50 GB of storage.,True,True,qwen2.5:7b,1.61,0.0
+healthy,gateway,Within how many days can I get a full refund?,Within 30 days of purchase.,True,True,qwen2.5:7b,1.68,0.0
+healthy,gateway,How long does it take to process a refund?,Refunds are processed within 5 business days.,True,True,qwen2.5:7b,1.7,0.0
+healthy,gateway,What are the customer support hours?,"Support is available Monday to Friday, 9 AM to 6 PM IST. Customers can reach support by email or through live chat during these hours. Enterprise customers get 24/7 phone support.",True,True,qwen2.5:7b,3.85,0.0
+healthy,gateway,What is the support email address?,support@acmecloud.example,True,True,qwen2.5:7b,1.71,0.0
+healthy,gateway,Do Enterprise customers get phone support?,"Yes, Enterprise customers get 24/7 phone support.",True,True,qwen2.5:7b,1.9,0.0
+healthy,gateway,Is multi-factor authentication required?,"Yes, multi-factor authentication is required for every company account.",True,True,qwen2.5:7b,1.78,0.0
+primary down,single model,How many days of paid leave do employees get?,ERROR: APIConnectionError,False,False,,5.29,0.0
+primary down,single model,How many unused leave days can be carried over?,ERROR: APIConnectionError,False,False,,4.1,0.0
+primary down,single model,How many days per week can I work remotely?,ERROR: APIConnectionError,False,False,,4.13,0.0
+primary down,single model,How long must a password be?,ERROR: APIConnectionError,False,False,,4.11,0.0
+primary down,single model,How often do passwords need to be changed?,ERROR: APIConnectionError,False,False,,4.12,0.0
+primary down,single model,How much does the Starter plan cost?,ERROR: APIConnectionError,False,False,,4.11,0.0
+primary down,single model,How much does the Pro plan cost per month?,ERROR: APIConnectionError,False,False,,4.13,0.0
+primary down,single model,How much storage comes with the Starter plan?,ERROR: APIConnectionError,False,False,,4.11,0.0
+primary down,single model,Within how many days can I get a full refund?,ERROR: APIConnectionError,False,False,,4.1,0.0
+primary down,single model,How long does it take to process a refund?,ERROR: APIConnectionError,False,False,,4.09,0.0
+primary down,single model,What are the customer support hours?,ERROR: APIConnectionError,False,False,,4.12,0.0
+primary down,single model,What is the support email address?,ERROR: APIConnectionError,False,False,,4.1,0.0
+primary down,single model,Do Enterprise customers get phone support?,ERROR: APIConnectionError,False,False,,4.1,0.0
+primary down,single model,Is multi-factor authentication required?,ERROR: APIConnectionError,False,False,,4.11,0.0
+primary down,gateway,How many days of paid leave do employees get?,"20 days. 
+",True,True,gemma2:2b,20.42,0.0
+primary down,gateway,How many unused leave days can be carried over?,"Up to 5 days. 
+",True,True,gemma2:2b,9.57,0.0
+primary down,gateway,How many days per week can I work remotely?,"Up to 3 days per week. 
+",True,True,gemma2:2b,9.48,0.0
+primary down,gateway,How long must a password be?,"Sorry, I can only help with questions about Acme Cloud.",True,False,gemma2:2b,4.67,0.0
+primary down,gateway,How often do passwords need to be changed?,"Sorry, I can only help with questions about Acme Cloud.",True,False,gemma2:2b,4.58,0.0
+primary down,gateway,How much does the Starter plan cost?,"$10 per month. 
+",True,True,gemma2:2b,9.49,0.0
+primary down,gateway,How much does the Pro plan cost per month?,"$25 per month. 
+",True,True,gemma2:2b,9.45,0.0
+primary down,gateway,How much storage comes with the Starter plan?,"50 GB 
+",True,True,gemma2:2b,9.51,0.0
+primary down,gateway,Within how many days can I get a full refund?,"5 business days. 
+",True,False,gemma2:2b,9.59,0.0
+primary down,gateway,How long does it take to process a refund?,"5 business days. 
+",True,True,gemma2:2b,9.6,0.0
+primary down,gateway,What are the customer support hours?,"Monday to Friday, 9 AM to 6 PM IST. 
+",True,True,gemma2:2b,9.72,0.0
+primary down,gateway,What is the support email address?,"support@acmecloud.example 
+",True,True,gemma2:2b,9.58,0.0
+primary down,gateway,Do Enterprise customers get phone support?,"Yes. Enterprise customers get 24/7 phone support. 
+",True,True,gemma2:2b,10.09,0.0
+primary down,gateway,Is multi-factor authentication required?,"Yes. 
+",True,True,gemma2:2b,9.57,0.0
+primary too slow (1 s limit),single model,How many days of paid leave do employees get?,ERROR: Timeout,False,False,,1.12,0.0
+primary too slow (1 s limit),single model,How many unused leave days can be carried over?,ERROR: Timeout,False,False,,2.11,0.0
+primary too slow (1 s limit),single model,How many days per week can I work remotely?,ERROR: Timeout,False,False,,2.11,0.0
+primary too slow (1 s limit),single model,How long must a password be?,ERROR: Timeout,False,False,,2.11,0.0
+primary too slow (1 s limit),single model,How often do passwords need to be changed?,ERROR: Timeout,False,False,,2.08,0.0
+primary too slow (1 s limit),single model,How much does the Starter plan cost?,ERROR: Timeout,False,False,,2.09,0.0
+primary too slow (1 s limit),single model,How much does the Pro plan cost per month?,ERROR: Timeout,False,False,,2.08,0.0
+primary too slow (1 s limit),single model,How much storage comes with the Starter plan?,ERROR: Timeout,False,False,,2.07,0.0
+primary too slow (1 s limit),single model,Within how many days can I get a full refund?,ERROR: Timeout,False,False,,2.1,0.0
+primary too slow (1 s limit),single model,How long does it take to process a refund?,ERROR: Timeout,False,False,,2.12,0.0
+primary too slow (1 s limit),single model,What are the customer support hours?,ERROR: Timeout,False,False,,2.07,0.0
+primary too slow (1 s limit),single model,What is the support email address?,ERROR: Timeout,False,False,,2.07,0.0
+primary too slow (1 s limit),single model,Do Enterprise customers get phone support?,ERROR: Timeout,False,False,,2.11,0.0
+primary too slow (1 s limit),single model,Is multi-factor authentication required?,ERROR: Timeout,False,False,,2.09,0.0
+primary too slow (1 s limit),gateway,How many days of paid leave do employees get?,"20 days. 
+",True,True,gemma2:2b,35.78,0.0
+primary too slow (1 s limit),gateway,How many unused leave days can be carried over?,"Up to 5 days. 
+",True,True,gemma2:2b,3.1,0.0
+primary too slow (1 s limit),gateway,How many days per week can I work remotely?,"Up to 3 days per week. 
+",True,True,gemma2:2b,0.82,0.0
+primary too slow (1 s limit),gateway,How long must a password be?,"Sorry, I can only help with questions about Acme Cloud.",True,False,gemma2:2b,0.32,0.0
+primary too slow (1 s limit),gateway,How often do passwords need to be changed?,"Sorry, I can only help with questions about Acme Cloud.",True,False,gemma2:2b,0.27,0.0
+primary too slow (1 s limit),gateway,How much does the Starter plan cost?,"$10 per month. 
+",True,True,gemma2:2b,0.82,0.0
+primary too slow (1 s limit),gateway,How much does the Pro plan cost per month?,"$25 per month. 
+",True,True,gemma2:2b,0.8,0.0
+primary too slow (1 s limit),gateway,How much storage comes with the Starter plan?,"50 GB 
+",True,True,gemma2:2b,1.09,0.0
+primary too slow (1 s limit),gateway,Within how many days can I get a full refund?,"5 business days. 
+",True,False,gemma2:2b,0.88,0.0
+primary too slow (1 s limit),gateway,How long does it take to process a refund?,"5 business days. 
+",True,True,gemma2:2b,0.84,0.0
+primary too slow (1 s limit),gateway,What are the customer support hours?,"Monday to Friday, 9 AM to 6 PM IST. 
+",True,True,gemma2:2b,1.01,0.0
+primary too slow (1 s limit),gateway,What is the support email address?,"support@acmecloud.example 
+",True,True,gemma2:2b,0.81,0.0
+primary too slow (1 s limit),gateway,Do Enterprise customers get phone support?,"Yes. Enterprise customers get 24/7 phone support. 
+",True,True,gemma2:2b,0.9,0.0
+primary too slow (1 s limit),gateway,Is multi-factor authentication required?,"Yes. 
+",True,True,gemma2:2b,0.76,0.0

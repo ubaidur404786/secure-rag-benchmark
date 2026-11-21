@@ -7,6 +7,9 @@ python-dotenv>=1.0
 # Optional: use OpenAI instead of Ollama (LLM_PROVIDER=openai)
 langchain-openai>=1.0
 
+# LLM gateway (gateway.py)
+litellm>=1.80
+
 # Benchmark and charts
 pandas>=2.2
 matplotlib>=3.8
